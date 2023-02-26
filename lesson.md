@@ -2,7 +2,7 @@
 
 ## Lesson Overview
 
-The focus of this lesson is on responsive web design. It is important for learners to understand the what, why and how of responsive web design. Responsive web design enable a webpage to adapt to multiple screen sizes such as laptop, tablet and mobile. Since most consumers are on the mobile today, it is responsive web design is crucial for every business. We won't be covering all best practices in this lesson but learners should be briefed over the list and know where to source for the information when needed.
+The focus of this lesson is on planning and implementing responsive web design. It is important for learners to understand the what, why and how of responsive web design. Responsive web design enable a webpage to adapt to multiple screen sizes such as laptop, tablet and mobile. Since most consumers are on the mobile today, responsive web design has become crucial for every businesses. We won't be covering all best practices in this lesson but learners should be briefed over the list and know where to source for the information when needed.
 
 ## Pre-requisite Installations
 
@@ -23,7 +23,7 @@ By the end of this lesson, we want to achieve the following effects:
 
 <img src="./assets/mobile.png" />
 
-> The above simple wireframe is drawn using `draw.io`. Before diving into writing html/css code to create your own profile page, we will take some time to become familiar with draw.io as it will be a tool to use for wireframing during your projects.
+> The wireframe is drawn using `draw.io`. Before diving into writing html/css code to create your own profile page, we would like take some time to familiarize with wireframing tool such as draw.io, do that we are able to produce a wireframe for all web projects in this program.
 
 ### Activity 1 - Get familiar with draw.io
 
@@ -38,7 +38,7 @@ Students should download and install draw.io program. By getting familiar with d
 - radio buttons
 - buttons
 
-### Activity 2 - Leverage on the Code Starter
+### Activity 2 - Lets get started with the starter code
 
 Copy the starter code from the [part1](./src/lesson/part1) folder to [my_web_page](./src/my_web_page/). Modify the details in `my_web_page` folder to fit your own profile.
 
@@ -56,7 +56,7 @@ Responsive Web Design is almost mandatory for every consumer based businesses si
 1. responsive image using `<picture>`
 1. avatar's `max-width:50%`
 
-Instructor to walk through the students on the implementations on part 2's [index.html](./src/lesson/part2/index.html) and [styles.css](./src/lesson/part2/styles.css)
+Let us explore some of the additional code we can include in both files: [index.html](./src/lesson/part2/index.html) and [styles.css](./src/lesson/part2/styles.css) to achieve a more responsive webpage.
 
 index.html
 ```html
@@ -66,7 +66,7 @@ index.html
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 1. Comment and Uncomment and view on responsive dev tool view-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 1. Once viewport is added, the image and text will comply to the device's screen size. Comment and uncomment this line to observe the difference in the mobile view. -->
     <title>My Profile</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -76,14 +76,14 @@ index.html
         <h1>My Profile</h1>
 
         <div id="picture-container">
-            <picture> <!-- 2. Add multiple image sources -->
+            <picture> <!-- 2. Add multiple image sources based on device's width -->
                 <source srcset="./images/slim-edison.jpeg" media="(max-width: 600px)">
                 <source srcset="./images/crab-edison.jpeg" media="(max-width: 1500px)">
                 <img id="avatar" src="./images/crab-edison.jpeg" alt="Edison">
             </picture>
         </div>
         
-        <p class="responsive-font"> <!-- 3. Use .responsive-font class in styles.css -->
+        <p class="responsive-font"> <!-- 3. Use .responsive-font class in styles.css. The vw unit will resize the font based on the screen size. Use dev tool to resize the page to observe the front grow/shrink accordingly. -->
             My name is Edison. I am a Software Engineer.
         </p>
         <p>
@@ -142,7 +142,7 @@ body{
 
 ## Part 3 - Use of `@media` query
 
-Refer to the [index.html](./src/lesson/part3/index.html) and [styles.css](./src/lesson/part3/styles.css) files for this part. The styling has been heavily modified to achieve optimal result for demonstration purpose.
+Refer to the part3's [index.html](./src/lesson/part3/index.html) and [styles.css](./src/lesson/part3/styles.css) files for this part. The styling has been modified to achieve optimal result for demonstration purpose. We removed the padding/margin of the elements to rely on CSS Flex properties.
 
 Changes:
 - Removed padding/margins of elements
@@ -166,7 +166,7 @@ Run [index.html](./src/lesson/part3/index.html) with live server, view page in d
     }
 }
 ```
-
+Key observations:
 - If the width of screen is 600px and below, use `flex-direction:column;`
 - Otherwise, stick to the default `flex-direction:row` declared within `#container` selector 
 

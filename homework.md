@@ -15,6 +15,8 @@ Deliverables:
 
 ## Submission
 
-How to submit?
+Homework are to be submitted to Google Classroom. Please ensure:
+- All relevant citation(s) from the internet are done using comments
+- Give credit to your classmate(s) if you had referenced their work
 
 END

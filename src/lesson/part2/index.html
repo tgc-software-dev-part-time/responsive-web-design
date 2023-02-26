@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 1. Comment and Uncomment and view on responsive dev tool view-->
+    <title>My Profile</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div> 
+        <h1>My Profile</h1>
+
+        <div id="picture-container">
+            <picture> <!-- 2. Add multiple image sources -->
+                <source srcset="./images/slim-edison.jpeg" media="(max-width: 600px)">
+                <source srcset="./images/crab-edison.jpeg" media="(max-width: 1500px)">
+                <img id="avatar" src="./images/crab-edison.jpeg" alt="Edison">
+            </picture>
+        </div>
+        
+        <p class="responsive-font"> <!-- 3. Use .responsive-font class in styles.css -->
+            My name is Edison. I am a Software Engineer.
+        </p>
+        <p>
+            My hobbies are:
+        <ul>
+            <li>Visiting nature parks</li>
+            <li>Swimming</li>
+        </ul>
+        </p>
+        <div class="social">
+            You can add me on <a href="https://www.linkedin.com/in/edisonzsq/">LinkedIn</a>
+        </div>
+    </div>
+</body>
+
+</html>

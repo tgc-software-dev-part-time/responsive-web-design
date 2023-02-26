@@ -1,0 +1,32 @@
+#avatar {
+    width:400px;
+    border-radius: 50%;
+    max-width:50%;
+}
+
+p {
+    margin:20px 50px 20px 50px;
+}
+
+.responsive-font{
+    font-size:5vw;
+}
+
+ul {
+    margin-left:80px;
+}
+
+li {
+    padding:4px;
+}
+
+.social {
+    background-color:skyblue;
+    color:#34282C;
+    padding:10px;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+}

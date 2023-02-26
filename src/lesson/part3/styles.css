@@ -1,0 +1,54 @@
+#avatar {
+    width:400px;
+    border-radius: 50%;
+    max-width:100%;
+}
+
+h1{
+    font-size:6vw;
+    display:flex;
+    justify-content: center;
+} 
+
+.responsive-font{
+    font-size:5vw;
+}
+
+.social {
+    background-color:skyblue;
+    color:#34282C;
+    padding:10px;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+}
+
+#container {
+    display:flex;
+    justify-content: center;
+    align-items:baseline;
+    flex-direction: row;
+}
+
+#picture-container{
+    display:flex;
+    justify-content:center;
+}
+
+#avatar-section{
+    flex-basis:50%;
+    padding:10px;
+}
+
+#writeup-section{
+    flex-basis:50%;
+    padding:10px;
+}
+
+@media screen and (max-width: 600px){
+    #container {
+        flex-direction: column;
+    }
+}

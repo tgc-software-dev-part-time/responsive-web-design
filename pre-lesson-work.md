@@ -2,10 +2,6 @@
 
 ## Brief
 
-This is not mandatory but recommended for students who wish to be better prepared for each lesson. Pre-lesson work may contain reading logs, installation guide (so that you don't have to scramble in class) for lesson use, and practical practices.
-
-## {{Enter Title}}
-
-{{Enter Content}}
+Refer to this [link](https://web.dev/responsive-web-design-basics/) to gain better understanding of the why, what, and how of responsive web design.
 
 End
